@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE4315C66E692B68CFF46050 /* Pods_AlexKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 431F8057923FC8C1B92D7840 /* Pods_AlexKit.framework */; };
 		FF0FD1301E235AB10059BD18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD12F1E235AB10059BD18 /* AppDelegate.swift */; };
 		FF0FD1321E235AB10059BD18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD1311E235AB10059BD18 /* ViewController.swift */; };
 		FF0FD1351E235AB10059BD18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF0FD1331E235AB10059BD18 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FFEC180CA4B3992619B1F18 /* Pods-AlexKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlexKit/Pods-AlexKit.debug.xcconfig"; sourceTree = "<group>"; };
+		431F8057923FC8C1B92D7840 /* Pods_AlexKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlexKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA24930C348D74A6777AA4D /* Pods-AlexKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlexKit/Pods-AlexKit.release.xcconfig"; sourceTree = "<group>"; };
 		FF0FD12C1E235AB10059BD18 /* AlexKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlexKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF0FD12F1E235AB10059BD18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF0FD1311E235AB10059BD18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE4315C66E692B68CFF46050 /* Pods_AlexKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BAC40DF35C01F7E067AC6807 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FFEC180CA4B3992619B1F18 /* Pods-AlexKit.debug.xcconfig */,
+				FCA24930C348D74A6777AA4D /* Pods-AlexKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC959A87494CCC947BF92B46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				431F8057923FC8C1B92D7840 /* Pods_AlexKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF0FD1231E235AB10059BD18 = {
 			isa = PBXGroup;
 			children = (
 				FF0FD12E1E235AB10059BD18 /* AlexKit */,
 				FF0FD12D1E235AB10059BD18 /* Products */,
+				BAC40DF35C01F7E067AC6807 /* Pods */,
+				FC959A87494CCC947BF92B46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF0FD13E1E235AB10059BD18 /* Build configuration list for PBXNativeTarget "AlexKit" */;
 			buildPhases = (
+				A831FF659E4E13279D8F0953 /* [CP] Check Pods Manifest.lock */,
 				FF0FD1281E235AB10059BD18 /* Sources */,
 				FF0FD1291E235AB10059BD18 /* Frameworks */,
 				FF0FD12A1E235AB10059BD18 /* Resources */,
+				EF2DCE6CE02D3405E8A75DB8 /* [CP] Embed Pods Frameworks */,
+				2FC4B8B0BC4662BB1E95F996 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FC4B8B0BC4662BB1E95F996 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlexKit/Pods-AlexKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A831FF659E4E13279D8F0953 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF2DCE6CE02D3405E8A75DB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlexKit/Pods-AlexKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF0FD1281E235AB10059BD18 /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		FF0FD13F1E235AB10059BD18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FFEC180CA4B3992619B1F18 /* Pods-AlexKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AlexKit/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		FF0FD1401E235AB10059BD18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCA24930C348D74A6777AA4D /* Pods-AlexKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AlexKit/Info.plist;
@@ -299,6 +376,7 @@
 				FF0FD1401E235AB10059BD18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

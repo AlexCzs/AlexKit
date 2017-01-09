@@ -1,0 +1,15 @@
+PODS:
+  - APIKit (3.1.1):
+    - Result (~> 3.0)
+  - Result (3.1.0)
+
+DEPENDENCIES:
+  - APIKit (~> 3.0)
+
+SPEC CHECKSUMS:
+  APIKit: 7460983f490d3bde6aaaaa4164d18c9865a6f91d
+  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
+
+PODFILE CHECKSUM: a56cc414035fba47238e4989a4bef80f89af54d2
+
+COCOAPODS: 1.1.1

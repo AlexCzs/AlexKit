@@ -1,0 +1,6 @@
+framework module Pods_AlexKit {
+  umbrella header "Pods-AlexKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
